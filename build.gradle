@@ -26,6 +26,9 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+
+	// Spark
+	compile "com.sparkjava:spark-core:2.8.0"
 }
 
 // Define the main class for the application
