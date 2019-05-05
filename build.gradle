@@ -34,6 +34,8 @@ dependencies {
 	// https://mvnrepository.com/artifact/com.google.code.gson/gson
 	compile group: 'com.google.code.gson', name: 'gson', version: '2.7'
 
+	compile 'com.athaydes.rawhttp:rawhttp-core:2.1'
+
     // Adding dependencies from start code libs directory
     compile fileTree(include: ['*.jar'], dir: 'libs')
 }
