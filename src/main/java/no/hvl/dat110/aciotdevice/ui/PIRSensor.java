@@ -17,7 +17,7 @@ public class PIRSensor extends Button {
 		this.iopins = iopins;
 		this.pin = pin;
 
-		Image image = new Image(getClass().getResourceAsStream("pir.png"));
+		Image image = new Image(getClass().getResourceAsStream("/pir.png"));
 		this.setGraphic(new ImageView(image));
 		this.setPrefWidth(100);
 		this.setPrefHeight(100);
