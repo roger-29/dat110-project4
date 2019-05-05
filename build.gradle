@@ -12,6 +12,9 @@ plugins {
 
     // Apply the application plugin to add support for building an application
     id 'application'
+
+    // Apply openjfx
+    id 'org.openjfx.javafxplugin' version '0.0.7'
 }
 
 repositories {
@@ -29,6 +32,15 @@ dependencies {
 
 	// Spark
 	compile "com.sparkjava:spark-core:2.8.0"
+
+    // Adding dependencies from start code libs directory
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+}
+
+// JavaFX / Openjfx
+javafx {
+    version = "11.0.2"
+    modules = [ 'javafx.controls' ]
 }
 
 // Define the main class for the application
