@@ -12,7 +12,7 @@ public class PIRSensor extends Button {
 	int pin;
 
 	public PIRSensor(String label, IOPins iopins, int pin) {
-		
+
 		super(label);
 		this.iopins = iopins;
 		this.pin = pin;
@@ -21,7 +21,7 @@ public class PIRSensor extends Button {
 		this.setGraphic(new ImageView(image));
 		this.setPrefWidth(100);
 		this.setPrefHeight(100);
-		
+
 		setOnAction(e -> {
 			iopins.write(pin, Constants.HIGH);
 			System.out.println("PIR SENSOR pin " + pin);

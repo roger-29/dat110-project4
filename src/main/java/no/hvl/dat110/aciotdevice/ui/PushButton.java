@@ -13,7 +13,7 @@ public class PushButton extends Button {
 		super(label);
 		this.iopins = iopins;
 		this.pin = pin;
-		
+
 		setOnAction(e -> {
 			iopins.write(pin, Constants.HIGH);
 			System.out.println("PUSHBOTTON pin " + pin);

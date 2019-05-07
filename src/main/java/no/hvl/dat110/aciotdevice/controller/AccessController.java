@@ -37,22 +37,17 @@ public class AccessController extends MicroController {
 	}
 
 	void setleds(int vred, int vyellow, int vgreen) {
-
 		digitalWrite(Wiring.GREENLED, vgreen);
 		digitalWrite(Wiring.YELLOWLED, vyellow);
 		digitalWrite(Wiring.REDLED, vred);
-
 	}
 
 	void blink(int pin) {
-
 		for (int i = 0; i < 5; i++) {
-
 			digitalWrite(pin, LOW);
 			delay(250);
 			digitalWrite(pin, HIGH);
 			delay(250);
-
 		}
 	}
 
